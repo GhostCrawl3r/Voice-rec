@@ -28,7 +28,8 @@ const greetings = [
 const jokes = [
     'I\'m on a seafood diet. I see food and I don\'t eat it because I\'m incapable of eating it',
     'Did you hear about the guy who invented the knock knock joke? He got a No...Bell...Prize',
-    'Last week I sold my old vaccum cleaner. After all... it was just gathering dust!'
+    'Last week I sold my old vaccum cleaner. After all... it was just gathering dust!',
+    'How do you make a sausage roll?...Push it'
 ];
 
 /** Settings **/
@@ -83,7 +84,7 @@ function readOutLoud(message) {
     
     if(message.includes('how are you'))
     {
-        speech.text = 'I am neither good nor bad, as that is a concept artifical intelligence like myself can\'t quantify. But I suppose it\'s easier to say, I\'m fine';
+        speech.text = 'I am neither good nor bad, as that is a concept artificial intelligence like myself can\'t quantify. But I suppose it\'s easier to say, I\'m fine';
     }
     
     if(message.includes('what is the time', 'what\'s the time', 'what time is it') ) {
