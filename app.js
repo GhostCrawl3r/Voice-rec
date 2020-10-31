@@ -64,11 +64,13 @@ function readOutLoud(message) {
     const speech = new SpeechSynthesisUtterance();
     speech.text = 'I\'m sorry, I don\'t understand what you\'re asking me';
     
-    if(message.includes("when were you born") || message.includes("When were you created")) {
+    if(message.includes("when were you born") || message.includes("When were you created"))
+    {
         speech.text = 'I was created on ' + creationDate;
     }
     
-    if(message.includes('hello')) {
+    if(message.includes('hello'))
+    {
         if(today.getHours() > 0 && today.getHours() < 12) {
             speech.text = greetings[0];
         }
